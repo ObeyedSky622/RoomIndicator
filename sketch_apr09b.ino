@@ -1,10 +1,24 @@
+/*
+  This is the code that goes  on to the arduino UNO, the code for the sparkfun is based off of the getData example in the blynk library
+  and is very trivial so I did not include it in the repository. Plus most of the work for Blynk is done throught the app. There are
+  many helpful blynk tutorials out there. I only used three buttons inside my Blynk project in my app and it is very simple.
+  Essentially, the only thing running on the sparkfun, is connection to internet, and then running the blynk command.
+  
+  The circuit is as follows:
+    pin 4 (sparkfun) --> pin 4 UNO
+    pin 0 (sparkfun) --> pin 6 UNO
+    pin 2 (sparkfun) --> pin 8 UNO
+    groun (sparkfun) --> ground UNO
+    The rest of the circuit is described in the sketch below
+*/
+
 #include <Adafruit_NeoPixel.h>
 
-#define PIN1        11 // On Trinket or Gemma, suggest changing this to 1
-#define PIN2       12 //orange small ring 12 
+#define PIN1        11 // These are the data_in pins for each of the rings
+#define PIN2       12 
 #define PIN3       13
 
-#define NUMPIXELS2      12
+#define NUMPIXELS2      12 //number of pixels for each ring
 #define NUMPIXELS3      16
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS1 16 // Popular NeoPixel ring size
