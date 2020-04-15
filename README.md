@@ -1,7 +1,7 @@
 # RoomIndicator
 This was a short project designed to let people know if it is okay to come into my room during the work day. 
 
-There were many similar projects which inspired this one. There was one that used a harddrive magnet, and another that used a big LED tower. This prohect is a smaller one and uses the IoT environment called Blynk. This application can be controlled from inside the room to let people on the outside know when to walk in, when to knock, and when I cannot be disturbed. This is a simple project that uses a Sprkfun ESP32 Thing Dev module, an arduino UNO, and 3 NeoPixel rings to indicate the room status. 
+There were many similar projects which inspired this one. There was one that used a harddrive magnet, and another that used a big LED tower. This project is a smaller one and uses the IoT environment called Blynk. This application can be controlled from inside the room to let people on the outside know when to walk in, when to knock, and when I cannot be disturbed. This is a simple project that uses a Sprkfun ESP32 Thing Dev module, an arduino UNO, and 3 NeoPixel rings to indicate the room status. 
 
 IMPLEMENTATION:
   I used 3 different neopixel objects so that it is easier to keep track of the indices of the pixels. If I used one long chain of 44 pixels, then in the for loops I would have much more complicated boundaries. Therefore, I thought it best to use three different objects. 
